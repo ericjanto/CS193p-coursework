@@ -21,7 +21,8 @@ struct ContentView: View {
         }
             .padding()
             .foregroundColor(Color.orange)
-            .font(Font.largeTitle)
+            .aspectRatio(3.5, contentMode: .fit)
+            .font(viewModel.cards.count == 10 ? Font.headline : Font.largeTitle)
     }
 }
 
